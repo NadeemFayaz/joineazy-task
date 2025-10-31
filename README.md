@@ -1,16 +1,50 @@
-# React + Vite
+# Joineazy - Assignment & Review Dashboard (Frontend Intern Task)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tech: React (Vite), Tailwind CSS. No backend — data in localStorage.
 
-Currently, two official plugins are available:
+## Run
+1. npm install
+2. npm run dev
+3. Open http://localhost:5173
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Student role: view assignments, mark submission with double-confirm flow.
+- Admin role: create assignments, view per-student submission status and progress bars.
+- Responsive UI (Tailwind).
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## Submission
+https://github.com/NadeemFayaz/joineazy-task
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+## Folder structure
+
+joineazy-task/
+├─ public/
+├─ src/
+│  ├─ assets/
+│  ├─ components/
+│  │  ├─ AdminDashboard.jsx
+│  │  ├─ AssignmentCard.jsx
+│  │  ├─ AssignmentForm.jsx
+│  │  ├─ ConfirmModal.jsx
+│  │  ├─ Header.jsx
+│  │  ├─ ProgressBar.jsx
+│  │  ├─ Sidebar.jsx
+│  │  └─ StudentDashboard.jsx
+│  ├─ data/
+│  │  └─ sampleData.js
+│  ├─ hooks/
+│  │  └─ useLocalStorage.js
+│  ├─ pages/
+│  │  └─ Home.jsx
+│  ├─ App.jsx
+│  ├─ main.jsx
+│  └─ index.css
+├─ .gitignore
+├─ package.json
+├─ tailwind.config.cjs
+└─ README.md
